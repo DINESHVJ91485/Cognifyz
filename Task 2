@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Library</title>
+</head>
+<body>
+    <h1>Anna Library</h1>
+    <img src="https://e0.pxfuel.com/wallpapers/481/181/desktop-wallpaper-library-background-library-laptop.jpg" height="350px" width="580px"><br>
+    <p>A place set apart to contain books, periodicals, and other material for reading, viewing, listening, study, or reference,<br>  as a room, set of rooms, or building where may be read or borrowed.</p>
+    <p>Library, traditionally, collection of books used for reading or study, or the building or room in which such a collection<br>is kept.The word derives from the Latin liber, “book,” whereas a Latinized Greek word, bibliotheca, is the origin of the<br>word for library in, German, Russian, and the Romance languages.
+    <p>From their historical beginnings as places to keep the business, legal, historical, and religious records of a civilization,<br>libraries have emerged since the middle of 20th century as a far-reaching body of information resources and services<br> that do not even require a building. Rapid developments in computers, telecommunications, and other technologies<br>have made it possible to store and retrieve information in many different forms and from any place with a computer<br> and a telephone connection.
+    <p>"A library is not a Luxury but one of the Necessities of Life" - Henry Ward Beecher.
+</body>
+<style>
+
+    h1 {
+        font-family:'Courier New', Courier, monospace;
+        font-size: 350%;
+        letter-spacing: 0.5mm;
+        text-align: center;
+        border: 5px solid rgb(0, 0, 15);
+        padding: 20px;
+        margin: 50px;
+        background-color: rgb(27, 128, 216);
+        color: white;
+        position: fixed;
+        width: 88.3%;
+    }
+    p{
+          position:relative;
+          left: 600px;
+          display: block;
+          bottom: 100px;
+          text-align: justify;
+          letter-spacing: 0.1mm;
+          line-height: 7mm;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 14.5;
+          
+        }
+      img{
+        position: relative;
+        top: 250px;
+        
+      }
+    
+      body{
+        background-color: rgb(166, 234, 243);
+        
+      }
+        </style>
+</html>
