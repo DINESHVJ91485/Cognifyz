@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna library</title>
+    <link rel="stylesheet" href="Styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Anna Library</h1>
+        <img src="https://e0.pxfuel.com/wallpapers/481/181/desktop-wallpaper-library-background-library-laptop.jpg" height="350px" width="580px"><br>
+        <p>A place set apart to contain books, periodicals, and other material for reading, viewing, listening, study, or reference,<br>  as a room, set of rooms, or building where may be read or borrowed.</p>
+        <p>Library, traditionally, collection of books used for reading or study, or the building or room in which such a collection<br>is kept.The word derives from the Latin liber, “book,” whereas a Latinized Greek word, bibliotheca, is the origin of the<br>word for library in, German, Russian, and the Romance languages.</p>
+        <p>From their historical beginnings as places to keep the business, legal, historical, and religious records of a civilization,<br>libraries have emerged since the middle of 20th century as a far-reaching body of information resources and services<br> that do not even require a building. Rapid developments in computers, telecommunications, and other technologies<br>have made it possible to store and retrieve information in many different forms and from any place with a computer<br> and a telephone connection.</p>
+        <p>"A library is not a Luxury but one of the Necessities of Life" - Henry Ward Beecher.</p>
+    </div>
+    <button id="changeBackground">Change Background Color</button>
+
+    <div class="form-container">
+        <form id="userForm">
+            <h2> Lbrary Registration Form</h2>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
+#style codes
+body {
+    background-color: rgb(166, 234, 243);
+}
+
+html {
+    background-color: rgb(213, 242, 244);
+    color:lig;
+}
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 350%;
+    letter-spacing: 0.5mm;
+    text-align: center;
+    border: 5px solid rgb(0, 0, 15);
+    padding: 20px;
+    margin: 50px;
+    background-color: rgb(27, 128, 216);
+    color: white;
+    width: 88.3%;
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    text-align: justify;
+    letter-spacing: 0.1mm;
+    line-height: 7mm;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14.5;
+    margin: 20px;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.form-container {
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0b0000;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #1359dd;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1359dd;
+}
+
+#changeBackground {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+        padding: 25px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2em;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    p {
+        font-size: 0.85em;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    p {
+        font-size: 0.75em;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.2em;
+        padding: 5px;
+        margin: 5px auto;
+        width: 95%;
+    }
+
+    p {
+        font-size: 0.7em;
+        margin: 5px;
+    }
+}
+
+
+#Java Script
+const button = document.getElementById('changeBackground');
+
+button.addEventListener('click', () => {
+  document.body.style.background = getRandomColor();
+});
+
+function getRandomColor() {
+  const colors = ['lightpink', 'lightblue', 'lightskyblue', 'lightsteelblue', 'lightseagreen', 'lightyellow', 'lightgrey'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const errorMessages = document.querySelectorAll('.error-message');
+    errorMessages.forEach(error => error.style.display = 'none');
+
+    let isValid = true;
+
+    const username = document.getElementById('username').value;
+    if (username.trim() === '') {
+        isValid = false;
+        document.getElementById('usernameError').textContent = 'Username is required';
+        document.getElementById('usernameError').style.display = 'block';
+    }
+
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        isValid = false;
+        document.getElementById('emailError').textContent = 'Enter a valid email address';
+        document.getElementById('emailError').style.display = 'block';
+    }
+
+    const password = document.getElementById('password').value;
+    if (password.length < 6) {
+        isValid = false;
+        document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
+        document.getElementById('passwordError').style.display = 'block';
+    }
+
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (password !== confirmPassword) {
+        isValid = false;
+        document.getElementById('confirmPasswordError').textContent = 'Passwords do not match';
+        document.getElementById('confirmPasswordError').style.display = 'block';
+    }
+
+    if (isValid) {
+        alert('Form submitted successfully!');
+        
+    }
+});
